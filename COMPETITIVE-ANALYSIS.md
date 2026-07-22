@@ -252,7 +252,7 @@ plain-language at grade 6–8.** No incumbent owns "**Ewing-specific, exposure-e
    turning potential competitors (Ewing Sarcoma Institute, Stupid Cancer, Cactus, survivorship clinics) into
    distributors.
 6. **Beneficiary-defined success** (reviewed content reaching real survivors + attested "better conversation"),
-   not pageviews — aligns with Elyos outcomes-over-merges ethos and with the dual review gate.
+   not pageviews — aligns with Hee-Lee Oss outcomes-over-merges ethos and with the dual review gate.
 
 ---
 

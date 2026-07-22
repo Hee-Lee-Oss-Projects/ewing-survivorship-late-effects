@@ -264,7 +264,7 @@ machine-checkable schema:
    tone/harm-avoidance sign-off, both version-scoped and recorded.
 6. **Publish** → static, accessible, translation-ready output, only for entries that pass all gates.
 
-**Tech stack.** TypeScript, ESM, pnpm workspaces (consistent with Elyos conventions). Content as
+**Tech stack.** TypeScript, ESM, pnpm workspaces (consistent with Hee-Lee Oss conventions). Content as
 structured Markdown/MDX or JSON validated by a JSON Schema; a static-site generator for publication;
 validation scripts run in CI (`pnpm build && pnpm test && pnpm lint`). Any AI drafting/eval calls go
 through a thin, provider-neutral LLM client (Claude as the reasoning resource, per the Claude API
@@ -335,7 +335,7 @@ cited, not redistributed.)
 **6) Privacy / PII stance (conservative).** The library **collects no patient data** — no accounts,
 no health intake, no individual risk inputs. There is **nothing to re-identify**. Optional feedback
 is **anonymous** with no PII and no profiling analytics. No secrets, tokens, or PII are written to
-logs, receipts, or committed files (Elyos rule). The "no individual data" stance is a design
+logs, receipts, or committed files (Hee-Lee Oss rule). The "no individual data" stance is a design
 constraint, not a setting.
 
 **7) No-medical-advice labeling & attribution.** Every page carries **"Informational, not medical
@@ -365,7 +365,7 @@ published/handed to a beneficiary:
   over-screening, or discourage recommended care). **No advocate, no ship.**
 - **Both are required and version-scoped.** Neither alone is sufficient; the maintainer **cannot**
   override a "do not ship" from either reviewer on substance. A reviewer "do not ship" blocks
-  publication; disagreement is logged and escalated to Elyos governance / a second credentialed
+  publication; disagreement is logged and escalated to Hee-Lee Oss governance / a second credentialed
   reviewer.
 
 **Other required reviews.**
@@ -453,7 +453,7 @@ reviewers, no patient-facing content). M5 blocks on a secured distribution partn
 ## Work breakdown
 
 The itemized, schema-mapped backlog lives in **`TASKS.md`**: ~18 tasks across milestones M0–M6 plus
-a future backlog, each mapped to the Elyos Task JSON schema, with per-task acceptance criteria for
+a future backlog, each mapped to the Hee-Lee Oss Task JSON schema, with per-task acceptance criteria for
 the most important items, milestone Definitions of Done, and a complete, schema-valid example Task
 JSON for the first M0 task (the content schema + provenance/guardrail spec). The first build items
 are the **content/provenance schema and the safety/licensing policy** — reflecting their status as
@@ -479,14 +479,14 @@ scale-up, and patient-facing content (M2+) gated on the **dual oncologist + advo
   reviewer's name/credentials may be published only for versions they approved, with consent, and
   may not imply endorsement of the whole library or NCI/COG/ESMO/CCLG endorsement.
 - **Disagreement fallback:** either reviewer holds a **veto** on shipping unsafe/inaccurate content;
-  a maintainer cannot override on substance. Disagreement is logged and escalated to Elyos governance
+  a maintainer cannot override on substance. Disagreement is logged and escalated to Hee-Lee Oss governance
   / a second credentialed reviewer; contested content does not ship.
 - **Steward (last-mile owner): TO BE SECURED** — owns the partner relationship and the distribution
   that constitutes shipping.
 - **Partner / requestor: TO BE SECURED** — a survivorship clinic, sarcoma/AYA advocacy organization,
   or oncology program.
 - **Community / board:** license edge cases and any permission requests (e.g., to reproduce a
-  specific table) go through Elyos governance.
+  specific table) go through Hee-Lee Oss governance.
 
 ---
 
@@ -497,8 +497,8 @@ scale-up, and patient-facing content (M2+) gated on the **dual oncologist + advo
   **verified reuse terms** and recorded provenance.
 - **External services:** Anthropic Claude API (drafting assistance + faithfulness eval, behind the
   neutral LLM client, per the Claude API skill); static-site hosting for the open library.
-- **Elyos pieces:** `packages/schema` (Task JSON), `CLAUDE.md` (work rules + refusal guardrails),
-  `docs/good-deed-definition.md` (risk tiers), Elyos governance (license/permission edge cases).
+- **Hee-Lee Oss pieces:** `packages/schema` (Task JSON), `CLAUDE.md` (work rules + refusal guardrails),
+  `docs/good-deed-definition.md` (risk tiers), Hee-Lee Oss governance (license/permission edge cases).
 - **Human/decision dependencies (critical path):** a secured **credentialed clinical reviewer** and a
   secured **patient-advocate reviewer** (both block M2+ patient-facing content); a secured
   **distribution partner/steward** (blocks M5). These are the project's true bottlenecks.
@@ -540,7 +540,7 @@ human review: citation-coverage, mandatory-label, source-similarity, **open-acce
 allowlist**, readability, accessibility, staleness, faithfulness eval, and the **dual oncologist +
 advocate sign-off**. AI drafting is server-side/tooling-side and grounded; the no-source-no-claim
 rule and human review backstop hallucination. **No secrets, tokens, or PII in logs, receipts, or
-committed files** (Elyos rule). Dependency and secret scanning in CI. Provenance records may not
+committed files** (Hee-Lee Oss rule). Dependency and secret scanning in CI. Provenance records may not
 point at controlled-access or individual-level sources (audited).
 
 **Abuse/misuse prevention.** The out-of-scope set (individualized advice, diagnosis, prognosis,
@@ -579,7 +579,7 @@ reviewer.
   Governance decision per request.
 - **Reviewer compensation/credit model** — volunteer vs a future funded lane for review hours (hard
   budget cap) without compromising independence?
-- **Distribution channel** — partner-hosted, Elyos-hosted open library, or contributed to an existing
+- **Distribution channel** — partner-hosted, Hee-Lee Oss-hosted open library, or contributed to an existing
   trusted patient-education publisher? Decided with the secured partner.
 - **AYA voice vs caregiver voice** — one entry with dual framings, or separate survivor/caregiver
   variants? Advocate-led decision.
@@ -593,7 +593,7 @@ reviewer.
 - Proposal: `governance/proposals/ewing-survivorship-late-effects.md` (TO BE WRITTEN)
 - Portfolio entry: `planning/ROADMAP.md` (Track 8a — `ewing-survivorship-late-effects`) and the
   Track 8 cancer-domain guardrails
-- Elyos work rules & refusal guardrails: `CLAUDE.md`
+- Hee-Lee Oss work rules & refusal guardrails: `CLAUDE.md`
 - Good-deed definition & risk tiers: `docs/good-deed-definition.md`
 - Task JSON schema: `packages/schema/src/schemas.ts`
 - House-style sibling plan: `planning/projects/public-official-guide/{PLAN,TASKS}.md`
